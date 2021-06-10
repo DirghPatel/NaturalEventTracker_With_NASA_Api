@@ -7,6 +7,7 @@ get your google map Api key from google cloud console (https://console.cloud.goo
 
 Basic concept to use google map react is here:
 [
+    
     const GoogleMap = ({ location , zoom  }) => {
     
     <GoogleMapReact

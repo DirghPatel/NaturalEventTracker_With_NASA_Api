@@ -7,12 +7,11 @@ get your google map Api key from google cloud console (https://console.cloud.goo
 
 Basic concept to use google map react is here:
 [
+    const GoogleMap = ({ location , zoom  }) => {
     <GoogleMapReact
       bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
       defaultCenter={this.props.center}
       defaultZoom={this.props.zoom}
-      yesIWantToUseGoogleMapApiInternals
-      onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
     >
       <AnyReactComponent
         lat={59.955413}
@@ -20,6 +19,7 @@ Basic concept to use google map react is here:
         text="My Marker"
       />
     </GoogleMapReact>
+    }
 ]
 
 I have used @iconify/react anf @iconify/icons for location markers.
